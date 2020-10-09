@@ -1,42 +1,41 @@
-import React from 'react'
-import { Container, Row, Col, Form, Button } from "react-bootstrap"
+import React from "react";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
-export const loginForm = () => {
-return(
- 
-  <Container>
-      <Row>
-          <Col>
-          <h1>Client login</h1>
-          <hr/>
-          <Form>
-              <Form.group>
-                  <Form.Label>Email Address</Form.Label>
-                  <Form.Control 
-                  type="email" 
-                  name="email"
-                  placeholder="enter your email"
-                  required
-                   />
+export const loginform = () => {
+    return (
+        <Container>
+            <Row>
+                <Col>
+                    <h1>Client Login</h1>
+                    <hr />
+                    <Form>
+                        <Form.Group>
+                            <Form.Label>Email Address</Form.Label>
+                            <Form.Control
+                                type="email"
+                                name="email"
+                                placeholder="Enter Email"
+                                required
+                            />
+                        </Form.Group>
+                        <Form.Group>
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control
+                                type="passsword"
+                                name="password"
+                                placeholder="pwd"
+                                required
+                            />
+                        </Form.Group>
+                        <Button type="submit">Login</Button>
 
-              </Form.group>
-              <Form.group>
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control 
-                  type="Password" 
-                  name="Password"
-                  placeholder="enter your Password"
-                  required
-                   />
 
-              </Form.group>
+                    </Form>
+                </Col>
+            </Row>
+        </Container>
 
-              <Button type ="Submit">Login</Button>
-          </Form>
 
-          </Col>
-      </Row>
-  </Container>
-);
+    )
 
-};
+}

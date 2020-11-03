@@ -3,7 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(141, 160, 55);
+    background-color: teal;}
+
+.form-box{
+    
+    box-shadow: 0px 0px 15px -5px yellow;
+
+}
 
     
-}

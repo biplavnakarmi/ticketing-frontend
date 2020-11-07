@@ -2,12 +2,21 @@ import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { TicketTable } from '../../components/ticket-table/TicketTable.comp';
 import tickets from '../../assests/data/dummy-ticket.json';
+import { PageBreadcrumb } from '../../components/breadcrumb/Breadcrumb.comp'
+
 
 export const Dashboard = () => {
     return (
         <Container>
+
             <Row>
-                <Col className="text-center mt-5 mb-2">
+                <Col>
+                    <PageBreadcrumb page="Dashboard" />
+                </Col>
+            </Row>
+
+            <Row>
+                <Col className="text-center mt-3 mb-2">
                     <Button variant="info" style={{ "fontSize": "1rem", padding: "10px 30px" }}>
                         Add New Ticket Here
         </Button>
@@ -28,7 +37,7 @@ export const Dashboard = () => {
                 <Col className="recent-tickets mt-4">
 
                     {/* receiving as props */}
-                    <TicketTable tickets={tickets}/>
+                    <TicketTable tickets={tickets} />
                 </Col>
             </Row>
 

@@ -8,7 +8,7 @@ export const DefaultLayout = ({ children }) => {
             {/* to write custom css */}
             {/* semmantic element */}
             <div className="default-layout">
-                <header className="header">
+                <header className="header mb-2">
                     <Header />
                     
                 </header>

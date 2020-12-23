@@ -3,7 +3,29 @@
         "id":1,
         "subject": "test required",
         "status": "client respond pending",
-        "addedAt": "06.10.2020"
+        "addedAt": "06.10.2020",
+        "history": [
+            {
+            "date": "20/10/2020",
+            "message": "test message 1 ",
+            "messageBy": "adminUser"
+            },
+            {
+            "date": "22/10/2020",
+            "message": "test message 2 ",
+            "messageBy": "client"
+            },
+            {
+            "date": "23/10/2020",
+            "message": "test message 3",
+            "messageBy": "internal"
+            },
+            {
+                "date": "23/10/2020",
+                "message": "test message 4",
+                "messageBy": "internal"
+                }
+        ]
     },
     {
         "id":2,
